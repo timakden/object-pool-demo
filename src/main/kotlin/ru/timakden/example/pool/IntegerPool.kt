@@ -18,7 +18,7 @@ class IntegerPool(factory: PooledObjectFactory<Int>?) : GenericObjectPool<Int>(f
      */
     fun releaseObject(obj: Int) {
         try {
-            Logger.info { "Trying to return object: $obj, class: ${obj::class.java}" }
+            Logger.info { "Trying to return object: $obj, class: ${obj?.javaClass}" }
             returnObject(obj)
             Logger.info { "Object was successfully returned to pool" }
         } catch (e: Exception) {

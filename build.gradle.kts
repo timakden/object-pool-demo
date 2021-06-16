@@ -1,7 +1,9 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     idea
-    id("com.github.ben-manes.versions") version "0.27.0"
-    kotlin("jvm") version "1.3.61"
+    id("com.github.ben-manes.versions") version "0.39.0"
+    kotlin("jvm") version "1.5.10"
 }
 
 group = "ru.timakden.example"
@@ -11,11 +13,13 @@ repositories {
     mavenCentral()
 }
 
+val tinylogVersion = "2.2.1"
+
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.apache.commons:commons-pool2:2.7.0")
-    implementation("org.tinylog:tinylog-api-kotlin:2.0.1")
-    implementation("org.tinylog:tinylog-impl:2.0.1")
+    implementation("org.apache.commons:commons-pool2:2.10.0")
+    implementation("org.tinylog:tinylog-api-kotlin:$tinylogVersion")
+    implementation("org.tinylog:tinylog-impl:$tinylogVersion")
 }
 
 idea {
@@ -26,10 +30,7 @@ idea {
 }
 
 tasks {
-    compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
-    }
-    compileTestKotlin {
-        kotlinOptions.jvmTarget = "1.8"
+    withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = "11"
     }
 }
