@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
 }
 
-val tinylogVersion = "2.2.1"
+val tinylogVersion = "2.3.2"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
