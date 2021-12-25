@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     idea
     id("com.github.ben-manes.versions") version "0.39.0"
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.6.10"
 }
 
 group = "ru.timakden.example"
@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
 }
 
-val tinylogVersion = "2.3.2"
+val tinylogVersion = "2.4.1"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
