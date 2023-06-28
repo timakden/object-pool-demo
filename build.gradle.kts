@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     idea
-    id("com.github.ben-manes.versions") version "0.46.0"
+    id("com.github.ben-manes.versions") version "0.47.0"
     kotlin("jvm") version "1.8.21"
 }
 
@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
 }
 
-val tinylogVersion = "2.6.1"
+val tinylogVersion = "2.6.2"
 
 dependencies {
     implementation(kotlin("stdlib"))
@@ -30,14 +30,14 @@ idea {
 }
 
 kotlin {
-    jvmToolchain(19)
+    jvmToolchain(17)
 }
 
 tasks {
     compileKotlin {
         compilerOptions {
             freeCompilerArgs.add("-Xjsr305=strict")
-            jvmTarget.set(JvmTarget.JVM_19)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
     }
 }
