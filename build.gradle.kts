@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     idea
-    id("com.github.ben-manes.versions") version "0.48.0"
+    id("com.github.ben-manes.versions") version "0.49.0"
     kotlin("jvm") version "1.9.10"
 }
 
@@ -17,7 +17,7 @@ val tinylogVersion = "2.6.2"
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.apache.commons:commons-pool2:2.11.1")
+    implementation("org.apache.commons:commons-pool2:2.12.0")
     implementation("org.tinylog:tinylog-api-kotlin:$tinylogVersion")
     implementation("org.tinylog:tinylog-impl:$tinylogVersion")
 }
