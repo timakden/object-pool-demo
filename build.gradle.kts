@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     idea
-    id("com.github.ben-manes.versions") version "0.49.0"
-    kotlin("jvm") version "1.9.20"
+    id("com.github.ben-manes.versions") version "0.50.0"
+    kotlin("jvm") version "1.9.21"
 }
 
 group = "ru.timakden.example"
