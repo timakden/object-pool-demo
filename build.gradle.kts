@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     idea
     id("com.github.ben-manes.versions") version "0.51.0"
-    kotlin("jvm") version "1.9.21"
+    kotlin("jvm") version "1.9.22"
 }
 
 group = "ru.timakden.example"
@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
 }
 
-val tinylogVersion = "2.6.2"
+val tinylogVersion = "2.7.0"
 
 dependencies {
     implementation(kotlin("stdlib"))
