@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
 
 val commonsPoolVersion: String by project
 val tinylogVersion: String by project
@@ -39,10 +40,10 @@ tasks {
     compileKotlin {
         compilerOptions {
             freeCompilerArgs.add("-Xjsr305=strict")
-            jvmTarget.set(JvmTarget.JVM_21)
+            jvmTarget.set(JVM_21)
         }
     }
     wrapper {
-        gradleVersion = "8.6"
+        gradleVersion = "8.7"
     }
 }
