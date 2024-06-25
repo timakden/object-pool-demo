@@ -1,8 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
 
-val commonsPoolVersion: String by project
-val tinylogVersion: String by project
-
 plugins {
     idea
     id("com.github.ben-manes.versions") version "0.51.0"
@@ -19,9 +16,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.apache.commons:commons-pool2:$commonsPoolVersion")
-    implementation("org.tinylog:tinylog-api-kotlin:$tinylogVersion")
-    implementation("org.tinylog:tinylog-impl:$tinylogVersion")
+    implementation("org.apache.commons:commons-pool2:2.12.0")
+    implementation("org.tinylog:tinylog-api-kotlin:2.7.0")
+    implementation("org.tinylog:tinylog-impl:2.7.0")
 }
 
 idea {
