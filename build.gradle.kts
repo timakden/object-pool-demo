@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.apache.commons:commons-pool2:2.12.0")
+    implementation("org.apache.commons:commons-pool2:2.12.1")
     implementation("org.tinylog:tinylog-api-kotlin:2.7.0")
     implementation("org.tinylog:tinylog-impl:2.7.0")
 }
