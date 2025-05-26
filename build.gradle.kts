@@ -40,6 +40,6 @@ tasks {
         }
     }
     wrapper {
-        gradleVersion = "8.14"
+        gradleVersion = "8.14.1"
     }
 }
